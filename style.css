@@ -1,0 +1,50 @@
+body {
+  background-color: #e8e6e3; /* 柔和灰米色背景 */
+  font-family: 'Segoe UI', sans-serif;
+  color: #2c3e50;
+}
+
+/* 卡片樣式 */
+.card {
+  background-color: #f4f4f2; /* 淡灰米色 */
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.card-title {
+  color: #5d5b6a; /* Morandi 紫灰 */
+}
+
+.card-text {
+  color: #3f3f44; /* 深灰文字 */
+}
+
+/* 按鈕樣式 */
+.btn-outline-primary {
+  border-color: #7d7c84;
+  color: #7d7c84;
+}
+
+.btn-outline-primary:hover {
+  background-color: #7d7c84;
+  color: #fff;
+}
+
+.btn-outline-success {
+  border-color: #9aa899;
+  color: #9aa899;
+}
+
+.btn-outline-success:hover {
+  background-color: #9aa899;
+  color: #fff;
+}
+
+/* 留言區 */
+.list-group-item {
+  background-color: #f0efeb;
+  border: none;
+  margin-bottom: 5px;
+  border-radius: 6px;
+}

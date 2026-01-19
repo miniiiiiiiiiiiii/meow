@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>English Articles</title>
+
+  <!-- 套用 Bootstrap（方便排版和按鈕樣式） -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- 套用自訂樣式 -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="container py-4">
+
+  <h1 class="mb-4">English Articles</h1>
+
+  <!-- 每日一句區塊 -->
+  <div class="mb-4">
+    <h4>Daily Quote</h4>
+    <p id="daily-quote" class="fst-italic text-secondary"></p>
+    <p id="daily-quote-translation" class="text-muted"></p>
+    <button class="btn btn-sm btn-outline-success" onclick="showRandomQuote()">New Quote</button>
+  </div>
+
+  <!-- 文章展示區 -->
+  <div id="article-list"></div>
+
+  <!-- 留言區 -->
+  <hr class="my-4">
+  <h4>Leave a Comment</h4>
+  <div class="mb-3">
+  <input type="text" id="comment-input" class="form-control" 
+         placeholder="Type your comment here..." oninput="updatePreview()" />
+  <p id="comment-preview" class="text-muted mt-2">目前您輸入的是: （尚未輸入）</p>
+</div>
+<button class="btn btn-outline-secondary mb-3" onclick="addComment()">Submit</button>
+
+<!-- 顯示留言數 -->
+<p id="comment-count" class="text-muted">目前留言數: 0</p>
+
+<ul id="comment-list" class="list-group"></ul>
+
+
+  <!-- 引入 JS（放在 body 最後，確保 DOM 已載入） -->
+  <script src="js/mii.js" defer></script>
+</body>
+</html>
