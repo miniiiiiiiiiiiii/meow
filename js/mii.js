@@ -8,7 +8,7 @@ const quotes = [
 ]; 
 function showRandomQuote() { 
   const quote = quotes[Math.floor(Math.random() * quotes.length)]; 
-  document.getElementById("daily-quote").innerText = quote; 
+  document.getElementById("daily-quote").innerText = quote;     // 把隨機挑選的名言文字顯示到 HTML 裡的 <p id="daily-quote"> 元素中。
 }
 
 
@@ -117,3 +117,4 @@ function addComment() {
   input.value = "";
   updatePreview();
 }
+
